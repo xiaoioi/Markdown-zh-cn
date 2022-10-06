@@ -1,0 +1,27 @@
+site_name: Markdown 中文文档
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+extra:
+  generator: false
+repo_url: https://github.com/xiaoioi/Markdown-zh-cn
+edit_uri: edit/main/docs/
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
