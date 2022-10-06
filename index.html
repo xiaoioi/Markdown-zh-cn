@@ -1,0 +1,692 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>Markdown 中文文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="." title="Markdown 中文文档" class="md-header__button md-logo" aria-label="Markdown 中文文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Markdown 中文文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xiaoioi/Markdown-zh-cn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Markdown 中文文档" class="md-nav__button md-logo" aria-label="Markdown 中文文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Markdown 中文文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xiaoioi/Markdown-zh-cn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    讨论列表 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    安装和要求 
+  </a>
+  
+    <nav class="md-nav" aria-label="安装和要求 ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    可动类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    开花
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bb" class="md-nav__link">
+    BB编辑
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    配置 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    致谢 
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="basics/" class="md-nav__link">
+        Basics
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="syntax/" class="md-nav__link">
+        Syntax
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    介绍
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    讨论列表 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    安装和要求 
+  </a>
+  
+    <nav class="md-nav" aria-label="安装和要求 ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    可动类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    开花
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bb" class="md-nav__link">
+    BB编辑
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    配置 
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    致谢 
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/xiaoioi/Markdown-zh-cn/edit/main/docs/index.md" title="编辑此页" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>Home</h1>
+
+<h2 id="_1">介绍</h2>
+<p>Markdown 是一个用于网络作家的文本到 HTML 转换工具。降价
+允许您使用易于阅读、易于编写的纯文本进行编写
+格式，然后将其转换为结构上有效的 XHTML（或 HTML）。</p>
+<p>因此，“Markdown”是两件事：（1）纯文本格式化语法；
+(2) 一个用 Perl 编写的软件工具，用于转换纯文本
+格式化为 HTML。有关详细信息，请参阅 [Syntax][] 页面
+Markdown 的格式化语法。您可以立即使用
+在线[丁格斯][]。</p>
+<p>[语法]：/projects/markdown/syntax
+  [dingus]：/projects/markdown/dingus</p>
+<p>Markdown 格式化语法的首要设计目标是使
+它尽可能可读。这个想法是 Markdown 格式的
+文档应按原样以纯文本形式发布，无需查看
+就像它被标记了标签或格式说明一样。尽管
+Markdown 的语法受到了几个现有的 text-to-HTML 的影响
+过滤器，Markdown 的最大灵感来源
+语法是纯文本电子邮件的格式。</p>
+<p>感受 Markdown 格式化语法的最好方法就是
+查看 Markdown 格式的文档。例如，您可以查看
+此页面上文章文本的 Markdown 来源：
+<a href="http://daringfireball.net/projects/markdown/index.text">http://daringfireball.net/projects/markdown/index.text</a></p>
+<p>（您可以使用这个 '.text' 后缀技巧来查看 Markdown 源
+本节中每个页面的内容，例如这
+[Syntax][s_src] 和 [License][l_s​​rc] 页。）</p>
+<p>[s_src]：/projects/markdown/syntax.text
+  [l_src]：/projects/markdown/license.text</p>
+<p>Markdown 是免费软件，在 BSD 风格的开源下可用
+执照。有关详细信息，请参阅 [许可证] [pl] 页面。</p>
+<p>[pl]：/项目/降价/许可证</p>
+<h2 id="_2">讨论列表 <a id="discussion-list" /></h2>
+<p>我已经建立了一个公开的 [用于讨论 Markdown 的邮件列表] [ml]。
+任何与 Markdown 相关的主题——包括它的格式语法和
+它的软件——是公平的讨论游戏。任何有兴趣的人
+欢迎加入。</p>
+<p>我希望邮件列表能为未来带来好主意
+对 Markdown 的改进。</p>
+<p>[毫升]：http://six.pairlist.net/mailman/listinfo/markdown-discuss</p>
+<h2 id="_3">安装和要求 <a id="install" /></h2>
+<p>Markdown 需要 Perl 5.6.0 或更高版本。欢迎来到 21 世纪。
+Markdown 还需要标准 Perl 库模块 [Digest::MD5]
+[md5]，它可能已经安装在您的服务器上。</p>
+<p>[md5]：http://search.cpan.org/dist/Digest-MD5/MD5.pm</p>
+<h3 id="_4">可动类型</h3>
+<p>Markdown 适用于 Movable Type 2.6 或更高版本（包括
+可移动类型 3.0)。</p>
+<ol>
+<li>
+<p>复制 "Markdown.pl" 文件到你的 Movable Type "plugins"
+目录。 “插件”目录应该在同一目录中
+作为“mt.cgi”；如果“插件”目录尚不存在，请使用
+您的 FTP 程序来创建它。您的安装应如下所示
+这个：</p>
+<pre><code>(mt home)/plugins/Markdown.pl
+</code></pre>
+</li>
+<li>
+<p>安装后，Markdown 将作为一个选项出现在 Movable Type 的
+文本格式弹出菜单。这可以在每个帖子的基础上进行选择：</p>
+</li>
+</ol>
+<p>![Movable Type '文本格式'菜单截图][tfmenu]</p>
+<p>当您发布时，Markdown 会将您的帖子翻译成 HTML；帖子
+它们以 Markdown 格式存储在您的 MT 数据库中。</p>
+<ol>
+<li>
+<p>如果您还安装了 SmartyPants 1.5（或更高版本），Markdown 将
+提供第二个文本格式选项：“Markdown With
+SmartyPants”。此选项与常规的“Markdown”相同
+格式化程序，除了它自动使用 SmartyPants 来创建
+排版正确的弯引号、破折号和省略号。看
+[SmartyPants 网页][sp] 了解更多信息。</p>
+</li>
+<li>
+<p>将 Markdown（或“Markdown With SmartyPants”）设为默认
+新帖子的文本格式选项，请转到博客配置：
+喜好。</p>
+</li>
+</ol>
+<p>请注意，默认情况下，Markdown 会生成 XHTML 输出。配置
+Markdown 以生成 HTML 4 输出，请参阅下面的“配置”。</p>
+<p>[sp]：http://daringfireball.net/projects/smartypants/</p>
+<h3 id="_5">开花</h3>
+<p>Markdown 适用于 Blosxom 2.0 或更高版本。</p>
+<p>1.将“Markdown.pl”插件重命名为“Markdown”（大小写为
+    重要的）。 Movable Type 要求插件有一个“.pl”
+    扩大; Blosxom 禁止它。</p>
+<ol>
+<li>
+<p>将“Markdown”插件文件复制到您的 Blosxom 插件文件夹中。
+    如果您不确定 Blosxom 插件文件夹在哪里，请参阅
+    Blosxom 文档以获取信息。</p>
+</li>
+<li>
+<p>就是这样。您的博客中的条目现在将自动
+由 Markdown 处理。</p>
+</li>
+<li>
+<p>如果您只想将 Markdown 格式应用于某些
+帖子，而不是所有帖子，Markdown 可以选择用于
+结合 Blosxom 的 [Meta][] 插件。首先，安装
+元插件。接下来，在文本中打开 Markdown 插件文件
+编辑器，并设置配置变量<code>$g_blosxom_use_meta</code>
+到 1. 然后，只需包含一个“<code>meta-markup: Markdown</code>" 标题行
+在您使用 Markdown 撰写的每篇文章的顶部。</p>
+</li>
+</ol>
+<p>[元]：http://www.blosxom.com/plugins/meta/meta.htm</p>
+<h3 id="bb">BB编辑</h3>
+<p>Markdown 适用于 Mac OS X 上的 BBEdit 6.1 或更高版本。它也适用
+在 Mac OS 8.6 或更高版本上使用 BBEdit 5.1 或更高版本和 MacPerl 5.6.1。如果
+您运行的是 Mac OS X 10.2 (Jaguar)，您可能需要安装
+Perl 模块 [Digest::MD5] [md5] 来自 CPAN；摘要::MD5来了
+预装在 Mac OS X 10.3 (Panther) 上。</p>
+<ol>
+<li>
+<p>将“Markdown.pl”文件复制到您的相应过滤器文件夹中
+“BBEdit 支持”文件夹。在 Mac OS X 上，这应该是：</p>
+<pre><code>BBEdit 支持/Unix 支持/Unix 过滤器/
+</code></pre>
+<p>有关位置的更多详细信息，请参阅 BBEdit 文档
+这些文件夹。</p>
+<p>您可以将“Markdown.pl”重命名为您想要的任何名称。</p>
+</li>
+<li>
+<p>就是这样。要使用 Markdown，请在 BBEdit 文档中选择一些文本，
+然后从“#!”的 Filters 子菜单中选择 Markdown菜单，或
+过滤器浮动调色板</p>
+</li>
+</ol>
+<h2 id="_6">配置 <a id="configuration"></a></h2>
+<p>默认情况下，Markdown 为带有空元素的标签生成 XHTML 输出。
+例如。：</p>
+<pre><code>&lt;br /&gt;
+</code></pre>
+<p>Markdown 可以配置为生成 HTML 样式的标签；例如。：</p>
+<pre><code>&lt;br&gt;
+</code></pre>
+<p>＃＃＃ 可动类型 ＃＃＃</p>
+<p>您需要在每个容器中使用特殊的“MTMarkdownOptions”容器标签
+您想要 HTML 4 样式输出的 Movable Type 模板：</p>
+<pre><code>&lt;MTMarkdownOptions 输出='html4'&gt;
+    ...把你的条目内容放在这里...
+&lt;/MTMarkdownOptions&gt;
+</code></pre>
+<p>使用 MTMarkdownOptions 的最简单方法可能是将
+在你的<code>&lt;body&gt;</code>标签之后的开始标签，以及在右边的结束标签
+在<code>&lt;/body&gt;</code>之前。</p>
+<p>抑制特定模板中的 Markdown 处理，即
+发布未经翻译的原始 Markdown 格式文本
+(X)HTML，将 <code>output</code> 属性设置为 'raw'：</p>
+<pre><code>&lt;MTMarkdownOptions 输出='raw'&gt;
+    ...把你的条目内容放在这里...
+&lt;/MTMarkdownOptions&gt;
+</code></pre>
+<p>＃＃＃ 命令行 ＃＃＃</p>
+<p>使用 <code>--html4tags</code> 命令行开关从
+Unix 风格的命令行。例如。：</p>
+<pre><code>% perl Markdown.pl --html4tags foo.text
+</code></pre>
+<p>键入 <code>perldoc Markdown.pl</code>，或阅读 POD 文档中的
+Markdown.pl 源代码以获取更多信息。</p>
+<h2 id="_7">致谢 <a id="acknowledgements" /></h2>
+<p>[Aaron Swartz][] 对于他对
+Markdown 的格式化语法设计。降价是<em>多</em>更好谢谢
+亚伦的想法、反馈和测试。另外，Aaron 的 [html2text][]
+是一个非常方便（且免费）的实用程序，用于将 HTML 转换为
+Markdown 格式的纯文本。</p>
+<p>[Nathaniel Irons][]、[Dan Benjamin][]、[Daniel Bogan][] 和 [Jason Perkins][]
+也值得感谢他们的反馈。</p>
+<p>[Michel Fortin][] 已将 Markdown 移植到 PHP；这是一个出色的端口，强烈推荐给任何正在寻找 Markdown 的 PHP 实现的人。</p>
+<p>[亚伦斯沃茨]：http://www.aaronsw.com/
+  [纳撒尼尔铁杆]：http://bumppo.net/
+  [丹本杰明]：http://hivelogic.com/
+  [丹尼尔·博根]：http://waferbaby.com/
+  [杰森帕金斯]：http://pressedpants.com/
+  [米歇尔福廷]：http://www.michelf.com/projects/php-markdown/
+  [html2text]：http://www.aaronsw.com/2002/html2text/</p>
+<p>[tfmenu]：/graphics/markdown/mt_textformat_menu.png</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2022</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+      
+        
+        <a href="basics/" class="md-footer__link md-footer__link--next" aria-label="下一页: Basics" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Basics
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant"], "search": "assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>

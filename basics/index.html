@@ -1,0 +1,834 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>Basics - Markdown 中文文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markdown" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Markdown 中文文档" class="md-header__button md-logo" aria-label="Markdown 中文文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Markdown 中文文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xiaoioi/Markdown-zh-cn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Markdown 中文文档" class="md-nav__button md-logo" aria-label="Markdown 中文文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Markdown 中文文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xiaoioi/Markdown-zh-cn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Basics
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#markdown_1" class="md-nav__link">
+    了解 Markdown 格式化语法的要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    段落、标题、大引号
+  </a>
+  
+    <nav class="md-nav" aria-label="段落、标题、大引号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    短语强调
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    列表
+  </a>
+  
+    <nav class="md-nav" aria-label="列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    链接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    图片
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown_2" class="md-nav__link">
+    了解 Markdown 格式化语法的要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    段落、标题、大引号
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syntax/" class="md-nav__link">
+        Syntax
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#markdown_1" class="md-nav__link">
+    了解 Markdown 格式化语法的要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    段落、标题、大引号
+  </a>
+  
+    <nav class="md-nav" aria-label="段落、标题、大引号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    短语强调
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    列表
+  </a>
+  
+    <nav class="md-nav" aria-label="列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    链接
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    图片
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown_2" class="md-nav__link">
+    了解 Markdown 格式化语法的要点
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    段落、标题、大引号
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/xiaoioi/Markdown-zh-cn/edit/main/docs/basics.md" title="编辑此页" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="markdown">Markdown 基本语法</h1>
+<ul id="ProjectSubmenu">
+    <li><a href="/projects/markdown/" title="Markdown 项目页面">主要</a></li>
+    <li><a class="selected" title="Markdown Basics">基础知识</a></li>
+    <li><a href="/projects/markdown/syntax" title="Markdown 语法文档">语法</a></li>
+    <li><a href="/projects/markdown/license" title="定价和许可信息">许可</a></li>
+    <li><a href="/projects/markdown/dingus" title="在线 Markdown Web 表单">Dingus</a></li>
+</ul>
+
+<h2 id="markdown_1">了解 Markdown 格式化语法的要点</h2>
+<p>本页简要概述了使用 Markdown 的感受。
+<a href="/projects/markdown/syntax" title="Markdown 语法">syntax page</a> 提供完整、详细的文档
+每个功能，但 Markdown 应该很容易上手
+看看它的几个例子。此页面上的示例
+以前后风格编写，显示示例语法和
+Markdown 生成的 HTML 输出。</p>
+<p>简单地尝试一下 Markdown 也很有帮助； <a href="/projects/markdown/dingus" title="Markdown Dingus">Dingus</a> 是一个
+允许您键入自己的 Markdown 格式文本的 Web 应用程序
+并将其翻译成 XHTML。</p>
+<p><strong>注意：</strong>本文档本身是使用 Markdown 编写的；你
+可以[通过将“.text”添加到 URL 来查看它的来源] [src]。</p>
+<p>[src]：/projects/markdown/basics.text</p>
+<h2 id="_1">段落、标题、大引号</h2>
+<p>段落只是一个或多个连续的文本行，分开
+一个或多个空行。 （空行是任何看起来像
+空行——只包含空格或制表符的行是
+视为空白。）正常段落不应缩进
+空格或制表符。</p>
+<p>Markdown 提供两种样式的标题：<em>Setext</em> 和 <em>atx</em>。
+<code>&lt;h1&gt;</code> 和 <code>&lt;h2&gt;</code> 的 Settext 样式标头由
+“下划线”分别带有等号 (<code>=</code>) 和连字符 (<code>-</code>)。
+要创建 atx 样式的标头，请在
+行首——哈希数等于结果
+HTML 标头级别。</p>
+<p>块引号使用电子邮件样式的“<code>&gt;</code>”尖括号表示。</p>
+<p>降价：</p>
+<pre><code>一级标题
+=====================
+
+二级标题
+---------------------
+
+现在是所有好男人都来的时候了
+他们国家的援助。这只是一个
+常规段落。
+
+敏捷的棕狐跳过懒惰的
+狗回来了。
+
+### 标题 3
+
+&gt; 这是一个块引用。
+&gt;
+&gt; 这是引用中的第二段。
+&gt;
+&gt; ## 这是块引用中的 H2
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;h1&gt;一级标题&lt;/h1&gt;
+
+&lt;h2&gt;二级标题&lt;/h2&gt;
+
+&lt;p&gt;现在是所有好人都来的时候了
+他们国家的援助。这只是一个
+常规段落。&lt;/p&gt;
+
+&lt;p&gt;敏捷的棕狐跳过懒惰的
+狗回来了。&lt;/p&gt;
+
+&lt;h3&gt;标题 3&lt;/h3&gt;
+
+&lt;块引用&gt;
+    &lt;p&gt;这是一个块引用。&lt;/p&gt;
+
+    &lt;p&gt;这是引用中的第二段。&lt;/p&gt;
+
+    &lt;h2&gt;这是块引用中的 H2&lt;/h2&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<h3 id="_2">短语强调</h3>
+<p>Markdown 使用星号和下划线来表示强调的范围。</p>
+<p>降价：</p>
+<pre><code>其中一些词*被强调*。
+其中一些词_也被强调_。
+
+使用两个星号表示**强调强调**。
+或者，如果您愿意，可以__改用两个下划线__。
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;其中一些词&lt;em&gt;被强调&lt;/em&gt;。
+其中一些词&lt;em&gt;也被强调&lt;/em&gt;。&lt;/p&gt;
+
+&lt;p&gt;使用两个星号表示&lt;strong&gt;强调&lt;/strong&gt;。
+或者，如果您愿意，&lt;strong&gt;改用两个下划线&lt;/strong&gt;。&lt;/p&gt;
+</code></pre>
+<h2 id="_3">列表</h2>
+<p>无序（项目符号）列表使用星号、加号和连字符（<code>*</code>，
+<code>+</code> 和 <code>-</code>) 作为列表标记。这三个标记是
+可互换；这个：</p>
+<pre><code>*   糖果。
+*口香糖。
+* 酒。
+</code></pre>
+<p>这个：</p>
+<pre><code>+糖果。
++口香糖。
++ 酒。
+</code></pre>
+<p>和这个：</p>
+<pre><code>-   糖果。
+- 口香糖。
+- 酒。
+</code></pre>
+<p>都产生相同的输出：</p>
+<pre><code>&lt;ul&gt;
+&lt;li&gt;糖果。&lt;/li&gt;
+&lt;li&gt;口香糖。&lt;/li&gt;
+&lt;li&gt;酒。&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>有序（编号）列表使用常规数字，后跟句点，如
+列表标记：</p>
+<pre><code>1. 红色
+2. 绿色
+3. 蓝色
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;ol&gt;
+&lt;li&gt;红色&lt;/li&gt;
+&lt;li&gt;绿色&lt;/li&gt;
+&lt;li&gt;蓝色&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<p>如果您在项目之间放置空行，您将获得 <code>&lt;p&gt;</code> 标记
+列表项文本。您可以通过缩进创建多段列表项
+4 个空格或 1 个制表符的段落：</p>
+<pre><code>* 一个列表项。
+
+    有多个段落。
+
+* 列表中的另一个项目。
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;一个列表项。&lt;/p&gt;
+&lt;p&gt;有多个段落。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;列表中的另一个项目。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="_4">链接</h3>
+<p>Markdown 支持两种创建链接的方式：<em>inline</em> 和
+<em>参考</em>。对于这两种样式，您都可以使用方括号来分隔
+你想变成链接的文本。</p>
+<p>内联样式的链接在 li 之后立即使用括号nk 文本。
+例如：</p>
+<pre><code>这是一个 [示例链接](http://example.com/)。
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;这是一个 &lt;a href="http://example.com/"&gt;
+示例链接&lt;/a&gt;.&lt;/p&gt;
+</code></pre>
+<p>或者，您可以在括号中包含标题属性：</p>
+<pre><code>这是一个[示例链接]（http://example.com/“带标题”）。
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;这是一个 &lt;a href="http://example.com/" title="With a Title"&gt;
+示例链接&lt;/a&gt;.&lt;/p&gt;
+</code></pre>
+<p>引用样式的链接允许您按名称引用您的链接，这
+您在文档的其他地方定义：</p>
+<pre><code>我从 [Google][1] 获得的流量是从 [Google][1] 获得的流量的 10 倍
+[雅虎][2] 或 [MSN][3]。
+
+[1]：http://google.com/“谷歌”
+[2]：http://search.yahoo.com/“雅虎搜索”
+[3]：http://search.msn.com/ 《MSN 搜索》
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;我从 &lt;a href="http://google.com/" 获得的流量增加了 10 倍
+title="Google"&gt;Google&lt;/a&gt; 比来自 &lt;a href="http://search.yahoo.com/"
+title="雅虎搜索"&gt;雅虎&lt;/a&gt; 或 &lt;a href="http://search.msn.com/"
+title="MSN 搜索"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+</code></pre>
+<p>标题属性是可选的。链接名称可能包含字母，
+数字和空格，但<em>不</em>区分大小写：</p>
+<pre><code>我以一杯咖啡开始我的早晨
+[纽约时报][纽约时报]。
+
+[纽约时报]：http://www.nytimes.com/
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;我从一杯咖啡开始我的早晨
+&lt;a href="http://www.nytimes.com/"&gt;纽约时报&lt;/a&gt;。&lt;/p&gt;
+</code></pre>
+<h3 id="_5">图片</h3>
+<p>图像语法非常类似于链接语法。</p>
+<p>内联（标题是可选的）：</p>
+<pre><code>![替代文字](/path/to/img.jpg "标题")
+</code></pre>
+<p>参考风格：</p>
+<pre><code>![替代文字][id]
+
+[id]: /path/to/img.jpg “标题”
+</code></pre>
+<p>上述两个示例都产生相同的输出：</p>
+<pre><code>&lt;img src="/path/to/img.jpg" alt="alt text" title="标题" /&gt;
+</code></pre>
+<h3 id="_6">代码</h3>
+<p>在常规段落中，您可以通过将文本换行来创建代码跨度
+反引号引号。任何与号 (<code>&amp;</code>) 和尖括号 (<code>&lt;</code> 或
+<code>&gt;</code>) 将自动翻译成 HTML 实体。这使得
+使用 Markdown 编写 HTML 示例代码很容易：</p>
+<pre><code>我强烈建议不要使用任何 `&lt;blink&gt;` 标签。
+
+我希望 SmartyPants 使用命名实体，例如 `&amp;mdash;`
+而不是像`&amp;#8212;`这样的十进制编码的实体。
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;我强烈建议不要使用任何
+&lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; 标签。&lt;/p&gt;
+
+&lt;p&gt;我希望 SmartyPants 使用命名实体，例如
+&lt;code&gt;&amp;amp;mdash;&lt;/code&gt; 代替十进制编码
+&lt;code&gt;&amp;amp;#8212;&lt;/code&gt;.&lt;/p&gt; 等实体
+</code></pre>
+<p>要指定整个预格式化代码块，请缩进每行
+由 4 个空格或 1 个制表符组成。就像代码跨度，<code>&amp;</code>，<code>&lt;</code>，
+和 <code>&gt;</code> 字符将自动转义。</p>
+<p>降价：</p>
+<pre><code>如果您希望您的页面在 XHTML 1.0 Strict 下进行验证，
+你必须把段落标签放在你的块引用中：
+
+    &lt;块引用&gt;
+        &lt;p&gt;例如。&lt;/p&gt;
+    &lt;/blockquote&gt;
+</code></pre>
+<p>输出：</p>
+<pre><code>&lt;p&gt;如果您希望您的页面在 XHTML 1.0 Strict 下进行验证，
+你必须把段落标签放在你的引用中：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;blockquote&gt;
+    &amp;lt;p&amp;gt;例如。&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;Markdown：基础
+</code></pre>
+<p>=================</p>
+<ul id="ProjectSubmenu">
+    <li><a href="/projects/markdown/" title="Markdown 项目页面">主要</a></li>
+    <li><a class="selected" title="Markdown Basics">基础知识</a></li>
+    <li><a href="/projects/markdown/syntax" title="Markdown 语法文档">语法</a></li>
+    <li><a href="/projects/markdown/license" title="定价和许可信息">许可</a></li>
+    <li><a href="/projects/markdown/dingus" title="在线 Markdown Web 表单">Dingus</a></li>
+</ul>
+
+<h2 id="markdown_2">了解 Markdown 格式化语法的要点</h2>
+<p>本页简要概述了使用 Markdown 的感受。
+<a href="/projects/markdown/syntax" title="Markdown 语法">syntax page</a> 提供完整、详细的文档
+每个功能，但 Markdown 应该很容易上手
+看看它的几个例子。此页面上的示例
+以前后风格编写，显示示例语法和
+Markdown 生成的 HTML 输出。</p>
+<p>简单地尝试一下 Markdown 也很有帮助； <a href="/projects/markdown/dingus" title="Markdown Dingus">Dingus</a> 是一个
+允许您键入自己的 Markdown 格式文本的 Web 应用程序
+并将其翻译成 XHTML。</p>
+<p><strong>注意：</strong>本文档本身是使用 Markdown 编写的；你
+可以[通过将“.text”添加到 URL 来查看它的来源] [src]。</p>
+<p>[src]：/projects/markdown/basics.text</p>
+<h2 id="_7">段落、标题、大引号</h2>
+<p>段落只是一个或多个连续的文本行，分开
+一个或多个空行。 （空行是任何看起来像
+空行——只包含空格或制表符的行是
+视为空白。）正常段落不应缩进
+空格或制表符。</p>
+<p>Markdown 提供两种样式的标题：<em>Setext</em> 和 <em>atx</em>。
+<code>&lt;h1&gt;</code> 和 <code>&lt;h2&gt;</code> 的 Settext 样式标头由
+带有等号 (<code>=</code>) 和连字符 (<code>-</code>) 的“下划线”，respec</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2022</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../syntax/" class="md-footer__link md-footer__link--next" aria-label="下一页: Syntax" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Syntax
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
